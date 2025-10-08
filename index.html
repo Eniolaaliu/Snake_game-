@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snake Game</title>
+        <!-- Fixed capitalization -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="box">
+            <div class="head-text">
+                <h1>SNAKE GAME</h1>
+            </div>
+            <div class="hero">
+                <canvas id="canvas" height="400" width="340"></canvas>
+            </div>
+            <div class="controls">
+                <button id="startbtn" class="primary">Start</button>
+                <button id="pausebtn">Pause</button>
+                <button id="restart">Restart</button>
+            </div>
+            <div class="info">
+                <!-- Removed extra 'panel' class -->
+                <div class="infos">
+                    <span>Score</span><strong id="score">0</strong>
+                </div>
+                <div class="infos">
+                    <span>Best</span><strong id="best">0</strong>
+                </div>
+                <div class="infos">
+                    <span>Speed</span><strong id="speed">5</strong>
+                    <!-- Added speed display -->
+                </div>
+            </div>
+            <!-- Properly closed div -->
+            <div class="pad-row" style="margin-top: 4px">
+                <div class="pad-btn" id="upBtn">▲</div>
+            </div>
+            <div class="pad-row" style="margin-top: 4px">
+                <div class="pad-btn" id="leftBtn">◀</div>
+                <div class="pad-btn" id="downBtn">▼</div>
+                <div class="pad-btn" id="rightBtn">▶</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <!-- Updated filename -->
+    </body>
+</html>
